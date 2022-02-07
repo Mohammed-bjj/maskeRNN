@@ -35,8 +35,8 @@ import numpy as np
 import skimage.draw
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("../../")
-
+ROOT_DIR = os.path.abspath("./")
+print("hello", ROOT_DIR)
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
 from mrcnn.config import Config
@@ -295,7 +295,7 @@ if __name__ == '__main__':
     print("Weights: ", args.weights)
     print("Dataset: ", args.dataset)
     print("Logs: ", args.logs)
-
+    print("hello  jsjj")
     # Configurations
     if args.command == "train":
         config = GunConfig()
