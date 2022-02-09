@@ -161,12 +161,12 @@ class OudeDataset(utils.Dataset):
 def train(model):
     """Train the model."""
     # Training dataset.
-    dataset_train = OudDataset()
+    dataset_train = OudeDataset()
     dataset_train.load_oud(args.dataset, "train")
     dataset_train.prepare()
 
     # Validation dataset
-    dataset_val = OudDataset()
+    dataset_val = OudeDataset()
     dataset_val.load_oud(args.dataset, "val")
     dataset_val.prepare()
 
